@@ -13,14 +13,40 @@
     <!-- my custom js -->
     <script src="app.js"></script>
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+
 
     <title>Race for the Iron Throne</title>
   </head>
   <body>
       <main>
-        <h1>In the Game of Thrones, You Win or You Die!</h1>
+        <div class="title">
+          <h1>In the Game of Thrones, You Win or You Die...</h1>
+          <h2>Press "a" to move Player 1 and ";" to move Player 2</h2>
+          <h3>Characters</h3>
 
-        <div class="winner-box"><h2 class="announce-winner"></h2></div>
+          <div class="characters">
+            <img class="charicon" src="../../GA/racing-game/images/jon-snow.png">
+            <img class="charicon" src="../../GA/racing-game/images/cersei.png">
+            <img class="charicon" src="../../GA/racing-game/images/Tyrion_lannister.png">
+            <img class="charicon" src="../../GA/racing-game/images/daenerys_targaryen.png">
+            <img class="charicon" src="../../GA/racing-game/images/jaime.png">
+            <img class="charicon" src="../../GA/racing-game/images/arya.png">
+            <img class="charicon" src="../../GA/racing-game/images/sansa.png">
+          </div>
+          <div>
+            <button id="start-race">Start Race</button>
+            <button id="player-1-select">Player 1 Select Character</button>
+            <button id="player-2-select">Player 2 Select Character</button>
+            <button id="reset">Reset</button>
+          </div>
+        </div>
+
+
+        <div class="winner-box title">
+          <h2 class="announce-winner"></h2>
+        </div>
 
         <div class="racetrack">
           <div class="lane player top">

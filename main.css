@@ -9,11 +9,34 @@ body {
 h1 {
   margin: 0;
   padding: 25px;
+  font-size: 40px;
+  padding-bottom: 10px;
+
 }
 
 img {
   height: 200px;
   width: auto;
+}
+
+.title {
+  text-align: center;
+  font-family: MedievalSharp, sans-serif;
+}
+
+.title h2 {
+  font-size: 30px;
+}
+
+.characters img {
+  height: 50px;
+  width: auto;
+}
+
+.character {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .winner-box {
@@ -25,8 +48,8 @@ img {
   vertical-align: middle;
 }
 
-.player{
-
+.character{
+  margin-left: 0px;
 }
 
 
