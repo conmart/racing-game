@@ -1,16 +1,44 @@
 
 
 body {
+  background-image: url('../../GA/racing-game/images/stefan-kunze-16849.jpg');
+  background-size: 100% auto;
 
 }
 
-.character {
+h1 {
+  margin: 0;
+  padding: 25px;
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+.winner-box {
+  height: 50px;
+}
+
+.lane {
+  height: 250px;
+  vertical-align: middle;
+}
+
+.player{
+
+}
+
+
+.throne {
+  justify-content: flex-end;
+  display: flex;
   height: 100px;
-  width: 100px;
-  background-color: black;
-  position: relative;
 }
 
-#p2 {
-  background-color: gray;
+
+#throne {
+  margin-top: -196px;
+  height: 400px;
+  margin-right: -140px;
 }

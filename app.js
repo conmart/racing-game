@@ -5,29 +5,31 @@ let gameactive = true;
 
 $(document).ready(function() {
 
-  $(window).on("keypress", function moveRight(event) {
+  $(window).on("keyup", function moveRight(event) {
     // console.log(event);
     if (gameactive) {
-      if (event.which === 47) {
+      if (event.which === 65) {
         check = document.getElementById("p1");
         console.log(check.getBoundingClientRect().right);
         // determines if player 1 has reached the finish line
-        if (check.getBoundingClientRect().right >= (document.documentElement.clientWidth - 1000)) {
-          alert("Player 1 wins");
+        if (check.getBoundingClientRect().right >= (document.documentElement.clientWidth - 300)) {
+          $(".announce-winner").append("Player 1 is the ruler of Westeros!");
+          gameactive = false;
         } else {
-          $("#p1").animate({
-                    "margin-left": "+=100px"
+          $("#p1").finish().animate({
+                    "margin-left": "+=30px"
             });
         };
-      } else if (event.which === 122) {
+      } else if (event.which === 222) {
         check = document.getElementById("p2");
         console.log(check.getBoundingClientRect().right);
         // determines if player 2 has reached the finish line
-        if (check.getBoundingClientRect().right >= (document.documentElement.clientWidth - 1000)) {
-          alert("Player 2 wins");
+        if (check.getBoundingClientRect().right >= (document.documentElement.clientWidth - 300)) {
+          $(".announce-winner").append("Player 2 is the ruler of Westeros!");
+          gameactive = false;
         } else {
-          $("#p2").animate({
-                    "margin-left": "+=100px"
+          $("#p2").finish().animate({
+                    "margin-left": "+=30px"
             });
         };
       }
