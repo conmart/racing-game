@@ -22,7 +22,7 @@ $(document).ready(function() {
                     "margin-left": "+=30px"
             });
         };
-      } else if (event.which === 222) {
+      } else if (event.which === 186) {
         check = document.getElementById("p2");
         // console.log(check.getBoundingClientRect().right);
         // determines if player 2 has reached the finish line
