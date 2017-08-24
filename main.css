@@ -8,15 +8,27 @@ body {
 
 h1 {
   margin: 0;
-  padding: 25px;
+  padding: 10px;
   font-size: 40px;
-  padding-bottom: 10px;
 
+}
+
+h2 {
+  padding: 10px;
+  margin: 5px;
+}
+
+h3 {
+  font-size: 25px;
 }
 
 img {
   height: 200px;
   width: auto;
+}
+
+button {
+  font-size: 18px;
 }
 
 .title {

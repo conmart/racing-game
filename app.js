@@ -15,7 +15,7 @@ $(document).ready(function() {
         // console.log(check.getBoundingClientRect().right);
         // determines if player 1 has reached the finish line
         if (check.getBoundingClientRect().right >= (document.documentElement.clientWidth - 120)) {
-          $(".announce-winner").text("Player 1 is the ruler of Westeros!");
+          $(".announce-winner").text("Player 1 is the ruler of Westeros");
           gameactive = false;
         } else {
           $("#p1").finish().animate({
