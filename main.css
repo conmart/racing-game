@@ -64,4 +64,5 @@ img {
   margin-top: -196px;
   height: 400px;
   margin-right: -140px;
+  z-index: -1;
 }
